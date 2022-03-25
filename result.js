@@ -4,6 +4,8 @@ function result_image(){
    var name2=document.getElementById("crushName").value;
   // var name1='abi';
   //  var name2='anu';
+  name1=name1.toLowerCase();
+  name2=name2.toLowerCase();
    var count=name1.length+name2.length;
   console.log(count);
     for(var i=0;i<name1.length;i++)
