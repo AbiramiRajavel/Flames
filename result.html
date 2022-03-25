@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="result.css">
+   
+    <title>result</title>
+</head>
+<body>
+   
+ <script>
+    //  document.getElementById('demo').innerHTML='helo'
+   var res=localStorage.getItem("textValue");
+     console.log(res);
+     var displayResult=document.createElement('div');
+     var first_para=document.createElement('p');
+     var displayImage=document.createElement('img');
+     displayResult.className='outerdiv';
+     displayImage.className='image_size';
+     first_para.className='ur_relation';
+     displayResult.append(first_para,displayImage);
+     document.body.append(displayResult);
+ switch(res)
+    {
+         case 'f':
+             {
+              first_para.innerText="you are family "+String.fromCodePoint(128106);
+              displayImage.src='../../images/family.jpg'; 
+              break;
+            }
+            case 'l':
+             {
+              first_para.innerText="you are in love "+String.fromCodePoint(128152);
+              displayImage.src='../../images/love1.webp'; 
+              break; 
+            }
+            case 'a':
+             {
+              first_para.innerText="Affectionate persons "+String.fromCodePoint(128540);
+              displayImage.src='../../images/affectionate.jpg'; 
+              break; 
+            }
+            case 'm':
+             {
+              first_para.innerText="you will marry "+String.fromCodePoint(128151);
+              displayImage.src='../../images/marriage.jpg'; 
+              break; 
+            }
+            case 'e':
+             {
+              first_para.innerHTML="Enemies "+String.fromCodePoint(128520);
+              displayImage.src='../../images/enemy.png'; 
+              break; 
+            }
+            case 's':
+             {
+              first_para.innerText="Sister love "+String.fromCodePoint(128568);
+              displayImage.src='../../images/sister.jpg'; 
+              break; 
+            }
+            
+     }
+     
+ </script>
+</body>
+</html>

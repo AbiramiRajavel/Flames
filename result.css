@@ -1,0 +1,31 @@
+
+body{
+    background-color: rgb(127, 255, 212,.5);
+}
+.outerdiv{
+  margin: auto;
+  width: 500px;
+  height: 500px;
+  background-color: azure;
+  margin-top: 8%;
+ 
+}
+.ur_relation{
+  color: black;
+  font-size: 2em;
+  padding-top:10px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+.image_size{
+  margin: 10px;
+  width: 95%;
+  height: 400px;
+  border: none;
+  border-radius: 1%;
+  
+}
+
+.image_size:hover {
+  opacity: .8;
+}
